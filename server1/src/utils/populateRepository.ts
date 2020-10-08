@@ -28,7 +28,7 @@ export const populateRepository = (repo: Map<string, Part>) => {
   });
   repo.set(ids[4], {
     name: 'Computador',
-    description: 'Lenovo ThinkPad',
+    description: 'Apple Macbook',
     subcomponents: [
       [ids[1], 1],
       [ids[2], 1],

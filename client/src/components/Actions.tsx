@@ -102,8 +102,8 @@ const Actions: React.FC<ActionsProps> = ({ repo, setResult, clear }) => {
                 }}
               />
             </FormControl>
-            {partForm.subcomponents.map((_, i) => (
-              <FormControl mt={2}>
+            {partForm.subcomponents.map((comp, i) => (
+              <FormControl mt={2} key={comp[0]}>
                 <FormLabel htmlFor={'subpart' + i}>Subparte {i + 1}</FormLabel>
                 <Flex>
                   <Input
